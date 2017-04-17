@@ -8,8 +8,8 @@ import org.springframework.web.bind.annotation.ResponseBody;
 public class GifController {
 
     @RequestMapping("/")
-    @ResponseBody
     public String listGifs() {
-        return "List of all the GIFs!";
+        return "home"; // used by thymeleaf view resolver to find html file
     }
+
 }
